@@ -1,0 +1,9 @@
+1) How does your data structure allow developers to access and manipulate the data?
+Answer: Developers can only add elements to the back of the queue, but they can remove them
+from any position. They can also retrieve the element that exists at multiple locations.
+
+2) If a developer wanted to find a specific element in your data structure, how would you search for it?
+Answer: The data elements are stored in an array, sorted, and then search via a binary search.
+
+3) What other real-world data can each structure represent?
+Answer: It can represent any list of data elements where items can be added, removed, sorted, and searched.

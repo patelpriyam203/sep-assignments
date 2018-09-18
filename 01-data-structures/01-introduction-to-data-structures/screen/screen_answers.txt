@@ -1,0 +1,10 @@
+1) How does your data structure allow developers to access and manipulate the data?
+Answer: Pixel, and Screen data structures contain methods that allow access to and manipulate the data elements.
+
+2) If a developer wanted to find a specific element in your data structure, how would you search for it?
+Answer: A nested for loop could be used to first find the pixel with a matching 'x' value,
+        and then find the matching 'y' value in the second loop.
+
+3) What other real-world data can each structure represent?
+Answer: A 2D array could be used to represent locations on a map or basically anything with rows and columns.
+        The Pixel data structure can represent some piece of information and its location relative to some grid.

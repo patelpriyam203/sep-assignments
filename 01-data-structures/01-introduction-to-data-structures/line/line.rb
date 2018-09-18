@@ -9,26 +9,49 @@ class Line
   end
 
   def join(person)
+    members.push(person)
   end
 
   def leave(person)
+    members.delete(person)
   end
 
   def front
+    members.first
   end
 
   def middle
+    members.slice((members.length/2).round)
   end
 
   def back
+    members.last
   end
 
   def search(person)
+    # if index(person)
+    #   person
+    # end
+    members.each do |member|
+      if person == member
+        return member
+      end
+    end
+    return nil
   end
 
   private
 
   def index(person)
+    # members.index(person)
+    count = 0;
+    members.each do |member|
+      if person == member
+        return count
+      else
+        count += 1
+      end
+    end
   end
 
 end
