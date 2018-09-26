@@ -8,11 +8,18 @@ class MyQueue
   end
 
   def enqueue(element)
+    @queue.unshift(element)
+    @head = @queue.last
+    @tail = @queue.first
   end
 
   def dequeue
+    @queue.delete_at(@queue.length-1)
+    @head = @queue.last
+    @tail = @queue.first
   end
 
   def empty?
+    @queue.length == 0
   end
 end
