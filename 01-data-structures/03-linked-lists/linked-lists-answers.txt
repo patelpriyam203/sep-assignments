@@ -1,0 +1,19 @@
+1. Spatial locality is when you reference elements in close to the same time frame and in space.
+   This benefits performance because its faster to add or remove an element, but it takes longer to search for a particular element.
+   When using the benchmark module as stated above an array would be on a faster scale than a linked list because of the structural differences of the two.
+   Arrays could become more fragmented and slower but excel in search factors.
+   On the other hand, linked lists are faster when inserting and deleting elements.
+
+ 2. Ruby Benchmark Result. We can see that the arrays have much higher performance benchmarks versus linked lists
+    user     system      total        real
+    array add    0.000000   0.000000   0.000000 (  0.000963)
+    linked l_list add  0.000000   0.000000   0.000000 (  0.005058)
+    user     system      total        real
+    array find   0.000000   0.000000   0.000000 (  0.000004)
+    linked l_list find  0.000000   0.000000   0.000000 (  0.000004)
+    user     system      total        real
+    array pop    0.000000   0.000000   0.000000 (  0.000004)
+    linked l_list pop  0.000000   0.000000   0.000000 (  0.000620)
+    user     system      total        real
+    array shift  0.000000   0.000000   0.000000 (  0.000004)
+    linked l_list shift  0.000000   0.000000   0.000000 (  0.000006)
